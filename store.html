@@ -31,22 +31,6 @@
 	<body>
 		<!-- HEADER -->
 		<header>
-			<!-- TOP HEADER -->
-			<div id="top-header">
-				<div class="container">
-					<ul class="header-links pull-left">
-						<li><a href="tel:+22890123456"><i class="fa fa-phone"></i> +228 90 12 34 56</a></li>
-						<li><a href="mailto:contact@infotechtogo.com"><i class="fa fa-envelope-o"></i> contact@infotechtogo.com</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> Bvd du 13 Janvier, Lomé, Togo</a></li>
-					</ul>
-					<ul class="header-links pull-right">
-						<li><a href="#"><i class="fa fa-money"></i> FCFA</a></li>
-						<li><a href="#"><i class="fa fa-user-o"></i> Mon Compte</a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- /TOP HEADER -->
-
 			<!-- MAIN HEADER -->
 			<div id="header">
 				<div class="container">
@@ -142,11 +126,12 @@
 					<ul class="main-nav nav navbar-nav">
 						<li><a href="index.html">Accueil</a></li>
 						<li class="active"><a href="store.html">Boutique</a></li>
-						<li><a href="#">PC Portables</a></li>
-						<li><a href="#">Imprimantes</a></li>
-						<li><a href="#">Réseaux</a></li>
-						<li><a href="#">Périphériques</a></li>
-						<li><a href="#">Accessoires</a></li>
+						<li><a href="store.html?category=pc-portables">PC Portables</a></li>
+						<li><a href="store.html?category=imprimantes">Imprimantes</a></li>
+						<li><a href="store.html?category=reseaux-surveillance">Réseaux</a></li>
+						<li><a href="store.html?category=peripheriques">Périphériques</a></li>
+						<li><a href="store.html?category=moniteurs">Moniteurs</a></li>
+						<li><a href="store.html" style="color:#D10024;">Déstockage</a></li>
 					</ul>
 				</div>
 			</div>
@@ -227,6 +212,14 @@
 										<small>(150)</small>
 									</label>
 								</div>
+								<div class="input-checkbox">
+									<input type="checkbox" id="category-7">
+									<label for="category-7">
+										<span></span>
+										Moniteurs
+										<small>(45)</small>
+									</label>
+								</div>
 							</div>
 						</div>
 						<!-- /aside Widget -->
@@ -301,6 +294,22 @@
 										<span></span>
 										TP-LINK
 										<small>(72)</small>
+									</label>
+								</div>
+								<div class="input-checkbox">
+									<input type="checkbox" id="brand-7">
+									<label for="brand-7">
+										<span></span>
+										APPLE
+										<small>(42)</small>
+									</label>
+								</div>
+								<div class="input-checkbox">
+									<input type="checkbox" id="brand-8">
+									<label for="brand-8">
+										<span></span>
+										HIKVISION
+										<small>(38)</small>
 									</label>
 								</div>
 							</div>
@@ -381,7 +390,7 @@
 						<div class="row">
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="HP EliteBook 840 G8" data-price="425000" data-img="./img/product01.png">
+								<div class="product" data-name="HP EliteBook 840 G8" data-price="425000" data-img="./img/product01.png" data-category="pc-portables" data-brand="hp">
 									<div class="product-img">
 										<img src="./img/product01.png" alt="">
 										<div class="product-label">
@@ -415,7 +424,7 @@
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="Lenovo ThinkPad T14" data-price="650000" data-img="./img/product02.png">
+								<div class="product" data-name="Lenovo ThinkPad T14" data-price="650000" data-img="./img/product02.png" data-category="pc-portables" data-brand="lenovo">
 									<div class="product-img">
 										<img src="./img/product02.png" alt="">
 										<div class="product-label">
@@ -450,7 +459,7 @@
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="Dell Latitude 5530" data-price="480000" data-img="./img/product03.png">
+								<div class="product" data-name="Dell Latitude 5530" data-price="480000" data-img="./img/product03.png" data-category="pc-portables" data-brand="dell">
 									<div class="product-img">
 										<img src="./img/product03.png" alt="">
 									</div>
@@ -482,7 +491,7 @@
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="Dell Moniteur 24 pouces" data-price="185000" data-img="./img/product04.png">
+								<div class="product" data-name="Dell Moniteur 24 pouces" data-price="185000" data-img="./img/product04.png" data-category="moniteurs" data-brand="dell">
 									<div class="product-img">
 										<img src="./img/product04.png" alt="">
 										<div class="product-label">
@@ -517,7 +526,7 @@
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="HP LaserJet Pro M404dn" data-price="195000" data-img="./img/product05.png">
+								<div class="product" data-name="HP LaserJet Pro M404dn" data-price="195000" data-img="./img/product05.png" data-category="imprimantes" data-brand="hp">
 									<div class="product-img">
 										<img src="./img/product05.png" alt="">
 										<div class="product-label">
@@ -550,7 +559,7 @@
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="ASUS VivoBook 15" data-price="250000" data-img="./img/product06.png">
+								<div class="product" data-name="ASUS VivoBook 15" data-price="250000" data-img="./img/product06.png" data-category="pc-portables" data-brand="asus">
 									<div class="product-img">
 										<img src="./img/product06.png" alt="">
 										<div class="product-label">
@@ -585,7 +594,7 @@
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="MacBook Air M2" data-price="850000" data-img="./img/product07.png">
+								<div class="product" data-name="MacBook Air M2" data-price="850000" data-img="./img/product07.png" data-category="pc-portables" data-brand="apple">
 									<div class="product-img">
 										<img src="./img/product07.png" alt="">
 										<div class="product-label">
@@ -618,7 +627,7 @@
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="Canon PIXMA G3411" data-price="120000" data-img="./img/product08.png">
+								<div class="product" data-name="Canon PIXMA G3411" data-price="120000" data-img="./img/product08.png" data-category="imprimantes" data-brand="canon">
 									<div class="product-img">
 										<img src="./img/product08.png" alt="">
 										<div class="product-label">
@@ -653,7 +662,7 @@
 
 							<!-- product -->
 							<div class="col-md-4 col-xs-6">
-								<div class="product" data-name="Hikvision Caméra 2MP" data-price="45000" data-img="./img/product09.png">
+								<div class="product" data-name="Hikvision Caméra 2MP" data-price="45000" data-img="./img/product09.png" data-category="reseaux-surveillance" data-brand="hikvision">
 									<div class="product-img">
 										<img src="./img/product09.png" alt="">
 										<div class="product-label">
@@ -820,6 +829,7 @@
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/cart.js"></script>
+		<script src="js/store.js"></script>
 
 	</body>
 </html>

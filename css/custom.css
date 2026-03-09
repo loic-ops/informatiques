@@ -151,6 +151,176 @@
 	font-style: italic;
 }
 
+/* --- Quick View Modal --- */
+#quick-view-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+}
+
+#quick-view-modal.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+#quick-view-modal .qv-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+#quick-view-modal .qv-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	border-radius: 8px;
+	max-width: 750px;
+	width: 90%;
+	max-height: 90vh;
+	overflow-y: auto;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+#quick-view-modal .qv-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	background: none;
+	border: none;
+	font-size: 28px;
+	color: #333;
+	cursor: pointer;
+	z-index: 10;
+	line-height: 1;
+}
+
+#quick-view-modal .qv-close:hover {
+	color: #D10024;
+}
+
+#quick-view-modal .qv-body {
+	display: flex;
+	padding: 30px;
+	gap: 25px;
+}
+
+#quick-view-modal .qv-img {
+	flex: 0 0 45%;
+	text-align: center;
+}
+
+#quick-view-modal .qv-img img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+#quick-view-modal .qv-details {
+	flex: 1;
+}
+
+#quick-view-modal .qv-category {
+	color: #D10024;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+#quick-view-modal .qv-name {
+	font-size: 20px;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+#quick-view-modal .qv-rating {
+	margin-bottom: 10px;
+}
+
+#quick-view-modal .qv-rating .fa-star {
+	color: #EF233C;
+	font-size: 14px;
+}
+
+#quick-view-modal .qv-rating .fa-star-o {
+	color: #ccc;
+	font-size: 14px;
+}
+
+#quick-view-modal .qv-price {
+	font-size: 22px;
+	font-weight: 700;
+	color: #D10024;
+	margin-bottom: 10px;
+}
+
+#quick-view-modal .qv-old-price {
+	font-size: 16px;
+	color: #999;
+	font-weight: 400;
+}
+
+#quick-view-modal .qv-stock {
+	color: #28a745;
+	font-size: 13px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#quick-view-modal .qv-actions {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#quick-view-modal .qv-add-cart {
+	padding: 10px 20px;
+	font-size: 13px;
+	border-radius: 40px;
+}
+
+#quick-view-modal .qv-view-full {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #1e1f29;
+	color: #fff;
+	border-radius: 40px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: background 0.3s;
+	text-decoration: none;
+}
+
+#quick-view-modal .qv-view-full:hover {
+	background: #D10024;
+	color: #fff;
+}
+
+@media (max-width: 600px) {
+	#quick-view-modal .qv-body {
+		flex-direction: column;
+		padding: 20px;
+	}
+	#quick-view-modal .qv-img {
+		flex: none;
+	}
+}
+
 /* --- Mobile responsive fixes for dropdown nav --- */
 @media (max-width: 991px) {
 	.main-nav .has-dropdown .dropdown-nav {
