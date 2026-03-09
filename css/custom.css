@@ -1,5 +1,56 @@
 /* ===== CUSTOM STYLES - InfoTech Togo ===== */
 
+/* --- Search bar fix: proper alignment with flexbox --- */
+.header-search form {
+	display: flex;
+	align-items: stretch;
+}
+
+.header-search form .input-select {
+	flex-shrink: 0;
+	width: 160px;
+	margin-right: 0;
+	border-right: none;
+	border-radius: 40px 0 0 40px;
+}
+
+.header-search form .input {
+	flex: 1;
+	width: auto;
+	margin-right: 0;
+	border-radius: 0;
+	border-left: none;
+	border-right: none;
+}
+
+.header-search form .search-btn {
+	flex-shrink: 0;
+	width: 110px;
+	margin-left: 0;
+	border-radius: 0 40px 40px 0;
+}
+
+@media (max-width: 991px) {
+	.header-search form .input-select {
+		width: 120px;
+		font-size: 12px;
+	}
+	.header-search form .search-btn {
+		width: 80px;
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header-search form .input-select {
+		display: none;
+	}
+	.header-search form .input {
+		border-radius: 40px 0 0 40px;
+		border-left: 1px solid #E4E7ED;
+	}
+}
+
 /* --- Dropdown Navigation Menu --- */
 .main-nav .has-dropdown {
 	position: relative;

@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Commander - InfoTech Togo</title>
+		<title>Mon Panier - InfoTech Togo</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -26,6 +26,215 @@
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 		<link type="text/css" rel="stylesheet" href="css/custom.css"/>
+
+		<style>
+			.cart-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-bottom: 30px;
+			}
+			.cart-table thead {
+				background: #1e1f29;
+				color: #FFF;
+			}
+			.cart-table thead th {
+				padding: 15px 20px;
+				font-size: 13px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+			.cart-table tbody tr {
+				border-bottom: 1px solid #E4E7ED;
+			}
+			.cart-table tbody td {
+				padding: 20px;
+				vertical-align: middle;
+			}
+			.cart-table .product-col {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+			}
+			.cart-table .product-col img {
+				width: 80px;
+				height: 80px;
+				object-fit: contain;
+				border: 1px solid #E4E7ED;
+				border-radius: 4px;
+				padding: 5px;
+			}
+			.cart-table .product-col h5 {
+				margin: 0;
+				font-size: 14px;
+				font-weight: 700;
+			}
+			.cart-table .qty-col {
+				display: flex;
+				align-items: center;
+				gap: 0;
+			}
+			.cart-table .qty-btn {
+				width: 36px;
+				height: 36px;
+				border: 1px solid #E4E7ED;
+				background: #FFF;
+				font-size: 16px;
+				font-weight: 700;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all 0.2s;
+			}
+			.cart-table .qty-btn:hover {
+				background: #D10024;
+				color: #FFF;
+				border-color: #D10024;
+			}
+			.cart-table .qty-input {
+				width: 50px;
+				height: 36px;
+				text-align: center;
+				border: 1px solid #E4E7ED;
+				border-left: none;
+				border-right: none;
+				font-size: 14px;
+				font-weight: 700;
+			}
+			.cart-table .price-col {
+				font-weight: 700;
+				font-size: 14px;
+				color: #D10024;
+			}
+			.cart-table .remove-btn {
+				background: none;
+				border: none;
+				color: #999;
+				font-size: 18px;
+				cursor: pointer;
+				padding: 5px 10px;
+				transition: color 0.2s;
+			}
+			.cart-table .remove-btn:hover {
+				color: #D10024;
+			}
+			.cart-summary-box {
+				background: #f5f5f5;
+				padding: 30px;
+				border-radius: 4px;
+			}
+			.cart-summary-box h4 {
+				font-size: 18px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+				padding-bottom: 15px;
+				border-bottom: 2px solid #E4E7ED;
+			}
+			.cart-summary-box .summary-row {
+				display: flex;
+				justify-content: space-between;
+				padding: 10px 0;
+				font-size: 14px;
+			}
+			.cart-summary-box .summary-row.total {
+				border-top: 2px solid #1e1f29;
+				margin-top: 10px;
+				padding-top: 15px;
+				font-size: 18px;
+				font-weight: 700;
+			}
+			.cart-summary-box .summary-row.total .total-price {
+				color: #D10024;
+			}
+			.cart-actions {
+				margin-top: 20px;
+				display: flex;
+				gap: 15px;
+			}
+			.cart-actions .primary-btn {
+				display: inline-block;
+				padding: 12px 30px;
+				background: #D10024;
+				color: #FFF;
+				font-weight: 700;
+				text-transform: uppercase;
+				border: none;
+				border-radius: 4px;
+				text-decoration: none;
+				font-size: 13px;
+				transition: background 0.2s;
+			}
+			.cart-actions .primary-btn:hover {
+				background: #a3001c;
+				color: #FFF;
+			}
+			.cart-actions .secondary-btn {
+				display: inline-block;
+				padding: 12px 30px;
+				background: #1e1f29;
+				color: #FFF;
+				font-weight: 700;
+				text-transform: uppercase;
+				border: none;
+				border-radius: 4px;
+				text-decoration: none;
+				font-size: 13px;
+				transition: background 0.2s;
+			}
+			.cart-actions .secondary-btn:hover {
+				background: #333;
+				color: #FFF;
+			}
+			.empty-cart {
+				text-align: center;
+				padding: 60px 20px;
+			}
+			.empty-cart i {
+				font-size: 80px;
+				color: #E4E7ED;
+				margin-bottom: 20px;
+			}
+			.empty-cart h3 {
+				font-size: 24px;
+				color: #333;
+				margin-bottom: 10px;
+			}
+			.empty-cart p {
+				color: #888;
+				margin-bottom: 25px;
+			}
+			@media (max-width: 767px) {
+				.cart-table thead {
+					display: none;
+				}
+				.cart-table tbody tr {
+					display: block;
+					padding: 15px;
+					margin-bottom: 10px;
+					border: 1px solid #E4E7ED;
+					border-radius: 4px;
+				}
+				.cart-table tbody td {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 8px 0;
+					border: none;
+				}
+				.cart-table tbody td::before {
+					content: attr(data-label);
+					font-weight: 700;
+					font-size: 13px;
+					text-transform: uppercase;
+					color: #1e1f29;
+				}
+				.cart-table .product-col {
+					flex-direction: column;
+					align-items: flex-end;
+				}
+			}
+		</style>
 
     </head>
 	<body>
@@ -146,11 +355,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h3 class="breadcrumb-header">Commander</h3>
+						<h3 class="breadcrumb-header">Mon Panier</h3>
 						<ul class="breadcrumb-tree">
 							<li><a href="index.html">Accueil</a></li>
-							<li><a href="cart.html">Panier</a></li>
-							<li class="active">Commander</li>
+							<li class="active">Mon Panier</li>
 						</ul>
 					</div>
 				</div>
@@ -162,164 +370,12 @@
 		<div class="section">
 			<div class="container">
 				<div class="row">
-
-					<div class="col-md-7">
-						<!-- Billing Details -->
-						<div class="billing-details">
-							<div class="section-title">
-								<h3 class="title">Adresse de facturation</h3>
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="first-name" placeholder="Prénom">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="last-name" placeholder="Nom">
-							</div>
-							<div class="form-group">
-								<input class="input" type="email" name="email" placeholder="Email">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="address" placeholder="Adresse">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="city" placeholder="Ville">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="country" placeholder="Pays" value="Togo">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="zip-code" placeholder="Code Postal">
-							</div>
-							<div class="form-group">
-								<input class="input" type="tel" name="tel" placeholder="Téléphone">
-							</div>
-							<div class="form-group">
-								<div class="input-checkbox">
-									<input type="checkbox" id="create-account">
-									<label for="create-account">
-										<span></span>
-										Créer un compte ?
-									</label>
-									<div class="caption">
-										<p>Créez un compte pour suivre vos commandes et accélérer vos prochains achats.</p>
-										<input class="input" type="password" name="password" placeholder="Entrez votre mot de passe">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /Billing Details -->
-
-						<!-- Shipping Details -->
-						<div class="shiping-details">
-							<div class="section-title">
-								<h3 class="title">Adresse de livraison</h3>
-							</div>
-							<div class="input-checkbox">
-								<input type="checkbox" id="shiping-address">
-								<label for="shiping-address">
-									<span></span>
-									Livrer à une adresse différente ?
-								</label>
-								<div class="caption">
-									<div class="form-group">
-										<input class="input" type="text" name="ship-first-name" placeholder="Prénom">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="ship-last-name" placeholder="Nom">
-									</div>
-									<div class="form-group">
-										<input class="input" type="email" name="ship-email" placeholder="Email">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="ship-address" placeholder="Adresse">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="ship-city" placeholder="Ville">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="ship-country" placeholder="Pays">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="ship-zip-code" placeholder="Code Postal">
-									</div>
-									<div class="form-group">
-										<input class="input" type="tel" name="ship-tel" placeholder="Téléphone">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /Shipping Details -->
-
-						<!-- Order notes -->
-						<div class="order-notes">
-							<textarea class="input" placeholder="Notes de commande (instructions spéciales pour la livraison, etc.)"></textarea>
-						</div>
-						<!-- /Order notes -->
+					<div class="col-md-8" id="cart-page-content">
+						<!-- Content generated by JS -->
 					</div>
-
-					<!-- Order Details -->
-					<div class="col-md-5 order-details">
-						<div class="section-title text-center">
-							<h3 class="title">Votre Commande</h3>
-						</div>
-						<div class="order-summary">
-							<div class="order-col">
-								<div><strong>PRODUIT</strong></div>
-								<div><strong>TOTAL</strong></div>
-							</div>
-							<div class="order-products" id="checkout-products">
-							</div>
-							<div class="order-col">
-								<div>Livraison</div>
-								<div><strong>GRATUITE</strong></div>
-							</div>
-							<div class="order-col">
-								<div><strong>TOTAL</strong></div>
-								<div><strong class="order-total" id="checkout-total">0 FCFA</strong></div>
-							</div>
-						</div>
-						<div class="payment-method">
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-1">
-								<label for="payment-1">
-									<span></span>
-									Virement bancaire
-								</label>
-								<div class="caption">
-									<p>Effectuez votre paiement directement sur notre compte bancaire. Veuillez utiliser votre numéro de commande comme référence de paiement.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-2">
-								<label for="payment-2">
-									<span></span>
-									Paiement Mobile Money
-								</label>
-								<div class="caption">
-									<p>Payez via Flooz ou T-Money. Vous recevrez les instructions de paiement après la commande.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-3">
-								<label for="payment-3">
-									<span></span>
-									Paiement à la livraison
-								</label>
-								<div class="caption">
-									<p>Payez en espèces à la réception de votre commande. Disponible uniquement pour les livraisons à Lomé.</p>
-								</div>
-							</div>
-						</div>
-						<div class="input-checkbox">
-							<input type="checkbox" id="terms">
-							<label for="terms">
-								<span></span>
-								J'ai lu et j'accepte les <a href="#">conditions générales de vente</a>
-							</label>
-						</div>
-						<a href="#" class="primary-btn order-submit">Passer la commande</a>
+					<div class="col-md-4" id="cart-summary-section">
+						<!-- Summary generated by JS -->
 					</div>
-					<!-- /Order Details -->
 				</div>
 			</div>
 		</div>
@@ -441,31 +497,85 @@
 		<script src="js/main.js"></script>
 		<script src="js/cart.js"></script>
 
-		<!-- Checkout dynamic cart display -->
+		<!-- Cart Page Logic -->
 		<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			var checkoutProducts = document.getElementById('checkout-products');
-			var checkoutTotal = document.getElementById('checkout-total');
+		function updateCartPage() {
+			var cartPageContent = document.getElementById('cart-page-content');
+			var cartSummarySection = document.getElementById('cart-summary-section');
 			var cart = JSON.parse(localStorage.getItem('infotechCart')) || [];
 
 			if (cart.length === 0) {
-				checkoutProducts.innerHTML = '<div class="order-col"><div>Votre panier est vide</div><div>-</div></div>';
-				checkoutTotal.textContent = '0 FCFA';
+				cartPageContent.className = 'col-md-12';
+				cartPageContent.innerHTML = '<div class="empty-cart">' +
+					'<i class="fa fa-shopping-cart"></i>' +
+					'<h3>Votre panier est vide</h3>' +
+					'<p>Vous n\'avez aucun article dans votre panier. Parcourez notre boutique pour trouver les meilleurs produits informatiques.</p>' +
+					'<div class="cart-actions" style="justify-content:center;">' +
+					'<a href="store.html" class="primary-btn"><i class="fa fa-shopping-bag"></i> Parcourir la boutique</a>' +
+					'</div>' +
+					'</div>';
+				cartSummarySection.innerHTML = '';
 				return;
 			}
 
-			var html = '';
+			cartPageContent.className = 'col-md-8';
+
+			// Build table
+			var html = '<table class="cart-table">';
+			html += '<thead><tr>';
+			html += '<th>Produit</th>';
+			html += '<th>Prix unitaire</th>';
+			html += '<th>Quantité</th>';
+			html += '<th>Sous-total</th>';
+			html += '<th></th>';
+			html += '</tr></thead>';
+			html += '<tbody>';
+
 			var total = 0;
-			cart.forEach(function(item) {
+			var totalItems = 0;
+
+			cart.forEach(function(item, index) {
 				var subtotal = item.price * item.qty;
 				total += subtotal;
-				html += '<div class="order-col">';
-				html += '<div>' + item.qty + 'x ' + item.name + '</div>';
-				html += '<div>' + formatPrice(subtotal) + ' FCFA</div>';
-				html += '</div>';
+				totalItems += item.qty;
+
+				html += '<tr>';
+				html += '<td data-label="Produit"><div class="product-col">';
+				html += '<img src="' + item.img + '" alt="' + item.name + '">';
+				html += '<h5>' + item.name + '</h5>';
+				html += '</div></td>';
+				html += '<td data-label="Prix unitaire" class="price-col">' + formatPrice(item.price) + ' FCFA</td>';
+				html += '<td data-label="Quantité"><div class="qty-col">';
+				html += '<button class="qty-btn" onclick="updateCartQty(' + index + ', -1)">-</button>';
+				html += '<input type="text" class="qty-input" value="' + item.qty + '" readonly>';
+				html += '<button class="qty-btn" onclick="updateCartQty(' + index + ', 1)">+</button>';
+				html += '</div></td>';
+				html += '<td data-label="Sous-total" class="price-col">' + formatPrice(subtotal) + ' FCFA</td>';
+				html += '<td data-label=""><button class="remove-btn" onclick="removeFromCart(' + index + ')" title="Supprimer"><i class="fa fa-trash-o"></i></button></td>';
+				html += '</tr>';
 			});
-			checkoutProducts.innerHTML = html;
-			checkoutTotal.textContent = formatPrice(total) + ' FCFA';
+
+			html += '</tbody></table>';
+
+			cartPageContent.innerHTML = html;
+
+			// Build summary
+			var summaryHtml = '<div class="cart-summary-box">';
+			summaryHtml += '<h4><i class="fa fa-file-text-o"></i> Récapitulatif</h4>';
+			summaryHtml += '<div class="summary-row"><span>Articles (' + totalItems + ')</span><span>' + formatPrice(total) + ' FCFA</span></div>';
+			summaryHtml += '<div class="summary-row"><span>Livraison</span><span style="color:#28a745;font-weight:700;">GRATUITE</span></div>';
+			summaryHtml += '<div class="summary-row total"><span>TOTAL</span><span class="total-price">' + formatPrice(total) + ' FCFA</span></div>';
+			summaryHtml += '<div class="cart-actions" style="flex-direction:column;">';
+			summaryHtml += '<a href="checkout.html" class="primary-btn" style="text-align:center;"><i class="fa fa-lock"></i> Passer la commande</a>';
+			summaryHtml += '<a href="store.html" class="secondary-btn" style="text-align:center;"><i class="fa fa-shopping-bag"></i> Continuer les achats</a>';
+			summaryHtml += '</div>';
+			summaryHtml += '</div>';
+
+			cartSummarySection.innerHTML = summaryHtml;
+		}
+
+		document.addEventListener('DOMContentLoaded', function() {
+			updateCartPage();
 		});
 		</script>
 
