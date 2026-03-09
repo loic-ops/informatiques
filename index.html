@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>InfoTech Togo - Vente de Matériel Informatique à Lomé</title>
+		<meta name="description" content="InfoTech Togo - Votre partenaire informatique de confiance à Lomé. PC portables, composants, périphériques, imprimantes et accessoires informatiques.">
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+		<!-- Custom overrides -->
+		<link type="text/css" rel="stylesheet" href="css/custom.css"/>
+
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="tel:+22890123456"><i class="fa fa-phone"></i> +228 90 12 34 56</a></li>
+						<li><a href="mailto:contact@infotechtogo.com"><i class="fa fa-envelope-o"></i> contact@infotechtogo.com</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> Lomé, Togo - Bvd du 13 Janvier</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class="fa fa-truck"></i> Livraison partout au Togo</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> Mon Compte</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="#" class="logo">
+									<img src="./img/logo.png" alt="InfoTech Togo">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0">Toutes les catégories</option>
+										<option value="1">PC Portables</option>
+										<option value="2">Ordinateurs de Bureau</option>
+										<option value="3">PC Gaming</option>
+										<option value="4">Composants PC</option>
+										<option value="5">Moniteurs</option>
+										<option value="6">Imprimantes</option>
+										<option value="7">Réseaux</option>
+										<option value="8">Périphériques</option>
+										<option value="9">Logiciels</option>
+										<option value="10">Téléphones</option>
+										<option value="11">Caméras de Surveillance</option>
+									</select>
+									<input class="input" placeholder="Rechercher un produit...">
+									<button class="search-btn">Rechercher</button>
+								</form>
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Wishlist -->
+								<div>
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Favoris</span>
+										<div class="qty" id="wishlist-qty">0</div>
+									</a>
+								</div>
+								<!-- /Wishlist -->
+
+								<!-- Cart -->
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Mon Panier</span>
+										<div class="qty" id="cart-qty">0</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list" id="cart-items">
+											<p class="empty-cart-msg" style="text-align:center; padding:20px; color:#888;">Votre panier est vide</p>
+										</div>
+										<div class="cart-summary">
+											<small id="cart-count">0 article(s) sélectionné(s)</small>
+											<h5>SOUS-TOTAL: <span id="cart-total">0</span> FCFA</h5>
+										</div>
+										<div class="cart-btns">
+											<a href="#">Voir le Panier</a>
+											<a href="checkout.html">Commander <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li class="active"><a href="#">Accueil</a></li>
+						<li class="has-dropdown">
+							<a href="#">PC Portables <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-nav">
+								<li><a href="#">DELL</a></li>
+								<li><a href="#">HP</a></li>
+								<li><a href="#">Lenovo / ThinkPad</a></li>
+								<li><a href="#">ASUS</a></li>
+								<li><a href="#">Acer</a></li>
+								<li><a href="#">Apple / MacBook</a></li>
+							</ul>
+						</li>
+						<li class="has-dropdown">
+							<a href="#">Ordinateurs Bureau <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-nav">
+								<li><a href="#">Tours / Desktop</a></li>
+								<li><a href="#">All-in-One</a></li>
+								<li><a href="#">Mini PC</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Gaming</a></li>
+						<li class="has-dropdown">
+							<a href="#">Imprimantes <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-nav">
+								<li><a href="#">Imprimantes Laser</a></li>
+								<li><a href="#">Imprimantes Jet d'encre</a></li>
+								<li><a href="#">Multifonctions</a></li>
+								<li><a href="#">Toners & Cartouches</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Réseaux</a></li>
+						<li><a href="#">Moniteurs</a></li>
+						<li class="has-dropdown">
+							<a href="#">Périphériques <i class="fa fa-caret-down"></i></a>
+							<ul class="dropdown-nav">
+								<li><a href="#">Claviers & Souris</a></li>
+								<li><a href="#">Stockage (SSD, HDD, Clés USB)</a></li>
+								<li><a href="#">RAM / Mémoire</a></li>
+								<li><a href="#">Câbles & Adaptateurs</a></li>
+								<li><a href="#">Onduleurs / UPS</a></li>
+							</ul>
+						</li>
+						<li><a href="#" style="color:#D10024;">Déstockage</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!-- SERVICE BANNER -->
+		<div class="section" style="padding: 15px 0; background: #f7f7f7; border-bottom: 1px solid #e4e7ed;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="service-item" style="text-align:center; padding:10px;">
+							<i class="fa fa-truck fa-2x" style="color:#D10024;"></i>
+							<h4 style="font-size:14px; margin-top:8px; font-weight:700;">Livraison Rapide</h4>
+							<p style="font-size:12px; color:#888;">Partout au Togo</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="service-item" style="text-align:center; padding:10px;">
+							<i class="fa fa-shield fa-2x" style="color:#D10024;"></i>
+							<h4 style="font-size:14px; margin-top:8px; font-weight:700;">Garantie Assurée</h4>
+							<p style="font-size:12px; color:#888;">Produits garantis</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="service-item" style="text-align:center; padding:10px;">
+							<i class="fa fa-money fa-2x" style="color:#D10024;"></i>
+							<h4 style="font-size:14px; margin-top:8px; font-weight:700;">Meilleurs Prix</h4>
+							<p style="font-size:12px; color:#888;">Prix compétitifs en FCFA</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="service-item" style="text-align:center; padding:10px;">
+							<i class="fa fa-headphones fa-2x" style="color:#D10024;"></i>
+							<h4 style="font-size:14px; margin-top:8px; font-weight:700;">Support 24/7</h4>
+							<p style="font-size:12px; color:#888;">Assistance technique</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /SERVICE BANNER -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- shop -->
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/shop01.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>PC Portables<br>& Ordinateurs</h3>
+								<a href="#" class="cta-btn">Voir plus <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- /shop -->
+
+					<!-- shop -->
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/shop03.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Imprimantes<br>& Réseaux</h3>
+								<a href="#" class="cta-btn">Voir plus <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- /shop -->
+
+					<!-- shop -->
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/shop02.png" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Périphériques<br>& Accessoires</h3>
+								<a href="#" class="cta-btn">Voir plus <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<!-- /shop -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- SECTION - NOUVEAUX PRODUITS -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Nouveaux Produits</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									<li class="active"><a data-toggle="tab" href="#tab1">PC Portables</a></li>
+									<li><a data-toggle="tab" href="#tab1">Composants</a></li>
+									<li><a data-toggle="tab" href="#tab1">Imprimantes</a></li>
+									<li><a data-toggle="tab" href="#tab1">Moniteurs</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /section title -->
+
+					<!-- Products tab & slick -->
+					<div class="col-md-12">
+						<div class="row">
+							<div class="products-tabs">
+								<!-- tab -->
+								<div id="tab1" class="tab-pane active">
+									<div class="products-slick" data-nav="#slick-nav-1">
+
+										<!-- product -->
+										<div class="product" data-name="HP EliteBook 840 G8 - Core i5 - 8Go RAM - 256Go SSD" data-price="425000" data-img="./img/product01.png">
+											<div class="product-img">
+												<img src="./img/product01.png" alt="">
+												<div class="product-label">
+													<span class="sale">-15%</span>
+													<span class="new">NOUVEAU</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">PC Portables - HP</p>
+												<h3 class="product-name"><a href="#">HP EliteBook 840 G8 - Core i5 - 8Go RAM - 256Go SSD</a></h3>
+												<h4 class="product-price">425 000 FCFA <del class="product-old-price">500 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="Lenovo ThinkPad T14 - Core i7 - 16Go RAM - 512Go SSD" data-price="650000" data-img="./img/product02.png">
+											<div class="product-img">
+												<img src="./img/product02.png" alt="">
+												<div class="product-label">
+													<span class="new">NOUVEAU</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">PC Portables - Lenovo</p>
+												<h3 class="product-name"><a href="#">Lenovo ThinkPad T14 - Core i7 - 16Go RAM - 512Go SSD</a></h3>
+												<h4 class="product-price">650 000 FCFA <del class="product-old-price">720 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="Dell Latitude 5530 - Core i5 - 8Go RAM - 256Go SSD" data-price="480000" data-img="./img/product03.png">
+											<div class="product-img">
+												<img src="./img/product03.png" alt="">
+												<div class="product-label">
+													<span class="sale">-20%</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">PC Portables - DELL</p>
+												<h3 class="product-name"><a href="#">Dell Latitude 5530 - Core i5 - 8Go RAM - 256Go SSD</a></h3>
+												<h4 class="product-price">480 000 FCFA <del class="product-old-price">600 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="Écran Dell 24 pouces Full HD IPS P2422H" data-price="185000" data-img="./img/product04.png">
+											<div class="product-img">
+												<img src="./img/product04.png" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Moniteurs - DELL</p>
+												<h3 class="product-name"><a href="#">Écran Dell 24" Full HD IPS - P2422H</a></h3>
+												<h4 class="product-price">185 000 FCFA <del class="product-old-price">210 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="HP LaserJet Pro M404dn Recto/Verso" data-price="195000" data-img="./img/product05.png">
+											<div class="product-img">
+												<img src="./img/product05.png" alt="">
+												<div class="product-label">
+													<span class="new">NOUVEAU</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Imprimantes - HP</p>
+												<h3 class="product-name"><a href="#">HP LaserJet Pro M404dn - Impression Recto/Verso</a></h3>
+												<h4 class="product-price">195 000 FCFA <del class="product-old-price">230 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="ASUS VivoBook 15 - Core i3 - 4Go RAM - 256Go SSD" data-price="250000" data-img="./img/product06.png">
+											<div class="product-img">
+												<img src="./img/product06.png" alt="">
+												<div class="product-label">
+													<span class="sale">-10%</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">PC Portables - ASUS</p>
+												<h3 class="product-name"><a href="#">ASUS VivoBook 15 - Core i3 - 4Go RAM - 256Go SSD</a></h3>
+												<h4 class="product-price">250 000 FCFA <del class="product-old-price">280 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+									</div>
+									<div id="slick-nav-1" class="products-slick-nav"></div>
+								</div>
+								<!-- /tab -->
+							</div>
+						</div>
+					</div>
+					<!-- Products tab & slick -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- HOT DEAL SECTION -->
+		<div id="hot-deal" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hot-deal">
+							<ul class="hot-deal-countdown">
+								<li>
+									<div>
+										<h3>02</h3>
+										<span>Jours</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>10</h3>
+										<span>Heures</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>34</h3>
+										<span>Min</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>60</h3>
+										<span>Sec</span>
+									</div>
+								</li>
+							</ul>
+							<h2 class="text-uppercase">Offre Spéciale - Déstockage</h2>
+							<p>Jusqu'à -50% sur une sélection de PC portables et accessoires</p>
+							<a class="primary-btn cta-btn" href="#">En profiter <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /HOT DEAL SECTION -->
+
+		<!-- SECTION - MEILLEURES VENTES -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Meilleures Ventes</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									<li class="active"><a data-toggle="tab" href="#tab2">PC Portables</a></li>
+									<li><a data-toggle="tab" href="#tab2">Réseaux</a></li>
+									<li><a data-toggle="tab" href="#tab2">Imprimantes</a></li>
+									<li><a data-toggle="tab" href="#tab2">Surveillance</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /section title -->
+
+					<!-- Products tab & slick -->
+					<div class="col-md-12">
+						<div class="row">
+							<div class="products-tabs">
+								<!-- tab -->
+								<div id="tab2" class="tab-pane fade in active">
+									<div class="products-slick" data-nav="#slick-nav-2">
+
+										<!-- product -->
+										<div class="product" data-name="MacBook Air M2 - 8Go RAM - 256Go SSD" data-price="850000" data-img="./img/product06.png">
+											<div class="product-img">
+												<img src="./img/product06.png" alt="">
+												<div class="product-label">
+													<span class="sale">-10%</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">PC Portables - Apple</p>
+												<h3 class="product-name"><a href="#">MacBook Air M2 - 8Go RAM - 256Go SSD</a></h3>
+												<h4 class="product-price">850 000 FCFA <del class="product-old-price">950 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="Routeur Wi-Fi TP-Link Archer AX50 Wi-Fi 6" data-price="75000" data-img="./img/product07.png">
+											<div class="product-img">
+												<img src="./img/product07.png" alt="">
+												<div class="product-label">
+													<span class="new">NOUVEAU</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Réseaux - TP-Link</p>
+												<h3 class="product-name"><a href="#">Routeur Wi-Fi TP-Link Archer AX50 - Wi-Fi 6</a></h3>
+												<h4 class="product-price">75 000 FCFA <del class="product-old-price">85 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="Imprimante Canon PIXMA G3411 Multifonction Wi-Fi" data-price="120000" data-img="./img/product08.png">
+											<div class="product-img">
+												<img src="./img/product08.png" alt="">
+												<div class="product-label">
+													<span class="sale">-15%</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Imprimantes - Canon</p>
+												<h3 class="product-name"><a href="#">Imprimante Canon PIXMA G3411 - Multifonction Wi-Fi</a></h3>
+												<h4 class="product-price">120 000 FCFA <del class="product-old-price">140 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="Caméra IP Hikvision 2MP Dôme Surveillance" data-price="45000" data-img="./img/product09.png">
+											<div class="product-img">
+												<img src="./img/product09.png" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Caméras de Surveillance</p>
+												<h3 class="product-name"><a href="#">Caméra IP Hikvision 2MP - Dôme Surveillance</a></h3>
+												<h4 class="product-price">45 000 FCFA <del class="product-old-price">55 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product" data-name="Switch TP-Link 8 Ports Gigabit TL-SG108" data-price="35000" data-img="./img/product01.png">
+											<div class="product-img">
+												<img src="./img/product01.png" alt="">
+												<div class="product-label">
+													<span class="sale">-20%</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Réseaux - TP-Link</p>
+												<h3 class="product-name"><a href="#">Switch TP-Link 8 Ports Gigabit - TL-SG108</a></h3>
+												<h4 class="product-price">35 000 FCFA <del class="product-old-price">45 000 FCFA</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist" onclick="addToWishlist(this)"><i class="fa fa-heart-o"></i><span class="tooltipp">ajouter aux favoris</span></button>
+													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">comparer</span></button>
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">aperçu rapide</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> ajouter au panier</button>
+											</div>
+										</div>
+										<!-- /product -->
+
+									</div>
+									<div id="slick-nav-2" class="products-slick-nav"></div>
+								</div>
+								<!-- /tab -->
+							</div>
+						</div>
+					</div>
+					<!-- /Products tab & slick -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- SECTION - WIDGETS -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-4 col-xs-6">
+						<div class="section-title">
+							<h4 class="title">PC Portables Populaires</h4>
+							<div class="section-nav">
+								<div id="slick-nav-3" class="products-slick-nav"></div>
+							</div>
+						</div>
+
+						<div class="products-widget-slick" data-nav="#slick-nav-3">
+							<div>
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product07.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">PC Portables - HP</p>
+										<h3 class="product-name"><a href="#">HP 250 G10 - Core i5 - 8Go RAM - 256Go SSD</a></h3>
+										<h4 class="product-price">350 000 FCFA <del class="product-old-price">400 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product08.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">PC Portables - DELL</p>
+										<h3 class="product-name"><a href="#">Dell Inspiron 15 3520 - Core i3 - 4Go RAM</a></h3>
+										<h4 class="product-price">220 000 FCFA <del class="product-old-price">260 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product09.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">PC Portables - Lenovo</p>
+										<h3 class="product-name"><a href="#">Lenovo ThinkPad T16 - Core i7 - 16Go RAM - 512Go</a></h3>
+										<h4 class="product-price">780 000 FCFA <del class="product-old-price">850 000 FCFA</del></h4>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product01.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">PC Portables - Acer</p>
+										<h3 class="product-name"><a href="#">Acer Aspire 5 A515 - Ryzen 5 - 8Go - 512Go</a></h3>
+										<h4 class="product-price">310 000 FCFA <del class="product-old-price">360 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product02.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">PC Portables - ASUS</p>
+										<h3 class="product-name"><a href="#">ASUS TUF Gaming F15 - Core i5 - RTX 3050</a></h3>
+										<h4 class="product-price">550 000 FCFA <del class="product-old-price">620 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product03.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">PC Portables - HP</p>
+										<h3 class="product-name"><a href="#">HP ProBook 450 G10 - Core i7 - 16Go RAM</a></h3>
+										<h4 class="product-price">520 000 FCFA <del class="product-old-price">600 000 FCFA</del></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-6">
+						<div class="section-title">
+							<h4 class="title">Réseaux & Surveillance</h4>
+							<div class="section-nav">
+								<div id="slick-nav-4" class="products-slick-nav"></div>
+							</div>
+						</div>
+
+						<div class="products-widget-slick" data-nav="#slick-nav-4">
+							<div>
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product04.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Réseaux - TP-Link</p>
+										<h3 class="product-name"><a href="#">TP-Link Routeur 300Mbps Wi-Fi N - TL-WR840N</a></h3>
+										<h4 class="product-price">18 000 FCFA <del class="product-old-price">22 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product05.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Réseaux - Ubiquiti</p>
+										<h3 class="product-name"><a href="#">Point d'Accès Ubiquiti UniFi AC LR</a></h3>
+										<h4 class="product-price">95 000 FCFA <del class="product-old-price">110 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product06.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Surveillance - Hikvision</p>
+										<h3 class="product-name"><a href="#">Kit Hikvision 4 Caméras + DVR 4CH</a></h3>
+										<h4 class="product-price">180 000 FCFA <del class="product-old-price">220 000 FCFA</del></h4>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product07.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Réseaux - Cisco</p>
+										<h3 class="product-name"><a href="#">Switch Cisco SG350-10 - 10 Ports Gigabit</a></h3>
+										<h4 class="product-price">250 000 FCFA <del class="product-old-price">290 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product08.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Réseaux</p>
+										<h3 class="product-name"><a href="#">Câble Réseau CAT6 UTP - Bobine 305m</a></h3>
+										<h4 class="product-price">85 000 FCFA <del class="product-old-price">100 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product09.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Surveillance - Dahua</p>
+										<h3 class="product-name"><a href="#">Caméra Dahua 4MP Bullet Extérieure IP67</a></h3>
+										<h4 class="product-price">55 000 FCFA <del class="product-old-price">65 000 FCFA</del></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix visible-sm visible-xs"></div>
+
+					<div class="col-md-4 col-xs-6">
+						<div class="section-title">
+							<h4 class="title">Imprimantes & Consommables</h4>
+							<div class="section-nav">
+								<div id="slick-nav-5" class="products-slick-nav"></div>
+							</div>
+						</div>
+
+						<div class="products-widget-slick" data-nav="#slick-nav-5">
+							<div>
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product01.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Imprimantes - HP</p>
+										<h3 class="product-name"><a href="#">HP DeskJet 2710e - Multifonction Wi-Fi</a></h3>
+										<h4 class="product-price">55 000 FCFA <del class="product-old-price">65 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product02.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Imprimantes - Epson</p>
+										<h3 class="product-name"><a href="#">Epson EcoTank L3250 - Réservoir d'encre Wi-Fi</a></h3>
+										<h4 class="product-price">145 000 FCFA <del class="product-old-price">170 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product03.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Consommables</p>
+										<h3 class="product-name"><a href="#">Toner HP 26A Compatible - LaserJet Pro</a></h3>
+										<h4 class="product-price">25 000 FCFA <del class="product-old-price">32 000 FCFA</del></h4>
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product04.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Imprimantes - Brother</p>
+										<h3 class="product-name"><a href="#">Brother HL-L2350DW - Laser Mono Wi-Fi</a></h3>
+										<h4 class="product-price">135 000 FCFA <del class="product-old-price">155 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product05.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Imprimantes - Canon</p>
+										<h3 class="product-name"><a href="#">Canon i-SENSYS MF267dw - Multifonction Laser</a></h3>
+										<h4 class="product-price">210 000 FCFA <del class="product-old-price">245 000 FCFA</del></h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/product06.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Consommables</p>
+										<h3 class="product-name"><a href="#">Ramette Papier A4 80g - 500 feuilles</a></h3>
+										<h4 class="product-price">3 500 FCFA <del class="product-old-price">4 000 FCFA</del></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- NEWSLETTER -->
+		<div id="newsletter" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="newsletter">
+							<p>Inscrivez-vous à notre <strong>NEWSLETTER</strong></p>
+							<form>
+								<input class="input" type="email" placeholder="Entrez votre adresse email">
+								<button class="newsletter-btn"><i class="fa fa-envelope"></i> S'abonner</button>
+							</form>
+							<ul class="newsletter-follow">
+								<li>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-whatsapp"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /NEWSLETTER -->
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">À Propos</h3>
+								<p>InfoTech Togo est votre partenaire de confiance pour l'achat de matériel informatique de qualité à Lomé. Nous offrons les meilleurs prix et un service après-vente garanti.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>Bvd du 13 Janvier, Lomé, Togo</a></li>
+									<li><a href="tel:+22890123456"><i class="fa fa-phone"></i>+228 90 12 34 56</a></li>
+									<li><a href="mailto:contact@infotechtogo.com"><i class="fa fa-envelope-o"></i>contact@infotechtogo.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Catégories</h3>
+								<ul class="footer-links">
+									<li><a href="#">PC Portables</a></li>
+									<li><a href="#">Ordinateurs de Bureau</a></li>
+									<li><a href="#">PC Gaming</a></li>
+									<li><a href="#">Imprimantes</a></li>
+									<li><a href="#">Réseaux</a></li>
+									<li><a href="#">Caméras de Surveillance</a></li>
+									<li><a href="#">Périphériques</a></li>
+									<li><a href="#">Déstockage</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Informations</h3>
+								<ul class="footer-links">
+									<li><a href="#">À Propos de Nous</a></li>
+									<li><a href="#">Contactez-Nous</a></li>
+									<li><a href="#">Politique de Confidentialité</a></li>
+									<li><a href="#">Livraison & Retours</a></li>
+									<li><a href="#">Conditions Générales</a></li>
+									<li><a href="#">Demande de Devis</a></li>
+									<li><a href="#">FAQ</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Mon Compte</h3>
+								<ul class="footer-links">
+									<li><a href="#">Mon Compte</a></li>
+									<li><a href="#">Mon Panier</a></li>
+									<li><a href="#">Mes Favoris</a></li>
+									<li><a href="#">Suivre ma Commande</a></li>
+									<li><a href="#">Aide & Support</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+			<!-- bottom footer -->
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-money"></i></a></li>
+								<li><a href="#"><i class="fa fa-mobile"></i></a></li>
+							</ul>
+							<span class="copyright">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> InfoTech Togo - Tous droits réservés | Template par <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+						</div>
+					</div>
+						<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /bottom footer -->
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- WHATSAPP FLOATING BUTTON -->
+		<a href="https://wa.me/22890123456" target="_blank" id="whatsapp-btn" style="position:fixed; bottom:25px; right:25px; background:#25D366; color:#fff; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:30px; box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:9999; text-decoration:none; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+			<i class="fa fa-whatsapp"></i>
+		</a>
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<!-- CART & WISHLIST JS -->
+		<script>
+		// Cart management with localStorage
+		var cart = JSON.parse(localStorage.getItem('infotechCart')) || [];
+		var wishlist = JSON.parse(localStorage.getItem('infotechWishlist')) || [];
+
+		function formatPrice(price) {
+			return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+		}
+
+		function saveCart() {
+			localStorage.setItem('infotechCart', JSON.stringify(cart));
+			updateCartUI();
+		}
+
+		function saveWishlist() {
+			localStorage.setItem('infotechWishlist', JSON.stringify(wishlist));
+			updateWishlistUI();
+		}
+
+		function addToCart(btn) {
+			var product = btn.closest('.product');
+			var name = product.getAttribute('data-name');
+			var price = parseInt(product.getAttribute('data-price'));
+			var img = product.getAttribute('data-img');
+
+			// Check if product already in cart
+			var existing = cart.find(function(item) { return item.name === name; });
+			if (existing) {
+				existing.qty += 1;
+			} else {
+				cart.push({ name: name, price: price, img: img, qty: 1 });
+			}
+
+			saveCart();
+
+			// Visual feedback
+			btn.innerHTML = '<i class="fa fa-check"></i> Ajouté !';
+			btn.style.background = '#28a745';
+			setTimeout(function() {
+				btn.innerHTML = '<i class="fa fa-shopping-cart"></i> ajouter au panier';
+				btn.style.background = '';
+			}, 1500);
+		}
+
+		function removeFromCart(index) {
+			cart.splice(index, 1);
+			saveCart();
+		}
+
+		function addToWishlist(btn) {
+			var product = btn.closest('.product');
+			var name = product.getAttribute('data-name');
+			var price = parseInt(product.getAttribute('data-price'));
+			var img = product.getAttribute('data-img');
+
+			var exists = wishlist.find(function(item) { return item.name === name; });
+			if (!exists) {
+				wishlist.push({ name: name, price: price, img: img });
+				saveWishlist();
+				btn.querySelector('i').className = 'fa fa-heart';
+				btn.style.color = '#D10024';
+			}
+		}
+
+		function updateCartUI() {
+			var cartItems = document.getElementById('cart-items');
+			var cartQty = document.getElementById('cart-qty');
+			var cartCount = document.getElementById('cart-count');
+			var cartTotal = document.getElementById('cart-total');
+
+			var totalItems = cart.reduce(function(sum, item) { return sum + item.qty; }, 0);
+			var totalPrice = cart.reduce(function(sum, item) { return sum + (item.price * item.qty); }, 0);
+
+			cartQty.textContent = totalItems;
+			cartCount.textContent = totalItems + ' article(s) sélectionné(s)';
+			cartTotal.textContent = formatPrice(totalPrice);
+
+			if (cart.length === 0) {
+				cartItems.innerHTML = '<p class="empty-cart-msg" style="text-align:center; padding:20px; color:#888;">Votre panier est vide</p>';
+				return;
+			}
+
+			var html = '';
+			cart.forEach(function(item, index) {
+				html += '<div class="product-widget">';
+				html += '<div class="product-img"><img src="' + item.img + '" alt=""></div>';
+				html += '<div class="product-body">';
+				html += '<h3 class="product-name"><a href="#">' + item.name + '</a></h3>';
+				html += '<h4 class="product-price"><span class="qty">' + item.qty + 'x</span>' + formatPrice(item.price) + ' FCFA</h4>';
+				html += '</div>';
+				html += '<button class="delete" onclick="removeFromCart(' + index + ')"><i class="fa fa-close"></i></button>';
+				html += '</div>';
+			});
+			cartItems.innerHTML = html;
+		}
+
+		function updateWishlistUI() {
+			var wishlistQty = document.getElementById('wishlist-qty');
+			wishlistQty.textContent = wishlist.length;
+		}
+
+		// Initialize on page load
+		document.addEventListener('DOMContentLoaded', function() {
+			updateCartUI();
+			updateWishlistUI();
+		});
+		</script>
+
+	</body>
+</html>
